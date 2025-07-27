@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Haunted Kiss Invitation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="envelope" onclick="openEnvelope()">
+    <p>Click to open the invitation...</p>
+  </div>
+
+  <div class="invitation hidden">
+    <img src="invitation.png" alt="Invitation" />
+    <div class="buttons">
+      <button onclick="playKiss()">Excited for the kisses 💋</button>
+      <button onclick="playScream()">Terrified to get kicked out the movies due to the kissing 😱</button>
+    </div>
+  </div>
+
+  <audio id="kiss-sound" src="kiss.mp3"></audio>
+  <audio id="scream-sound" src="scream.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
